@@ -1,4 +1,9 @@
 Fisherific::Application.routes.draw do
+  
+  root :to => "static_pages#home"
+  match "/projects" => "static_pages#projects"
+  match "/about" => "static_pages#about"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

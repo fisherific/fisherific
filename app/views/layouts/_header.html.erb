@@ -1,0 +1,21 @@
+<div id="header">
+	
+	<div id="header_inner">
+		
+		<div id="title">
+			<h1><%= link_to "[fisherific]", root_path %></h1>
+		</div>
+
+		<div id="nav">
+			<ul class="nav">
+				
+				<li <%= menu_select('home') %> ><%= link_to "Home", root_path, :class => 'nav_item' %></li>
+				<li <%= menu_select('projects') %> ><%= link_to "Projects", projects_path, :class => 'nav_item' %></li>
+				<li <%= menu_select('about') %> ><%= link_to "About", about_path, :class => 'nav_item' %></li>
+				
+			</ul>
+		</div>
+	
+	</div>
+	
+</div>

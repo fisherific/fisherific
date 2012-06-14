@@ -312,6 +312,14 @@ body{
 	text-decoration:none;
 }
 
+#title h1 a{
+
+	color:#f9f9f9;
+	font-size:45px;
+	font-weight: 400;
+	
+}
+
 /* Main content */
 
 #content_holder{
@@ -393,14 +401,6 @@ h1, h2, h3, h4, h5, h6{
 	
 	font-weight: 400; 
 	margin:0;
-	
-}
-
-#header h1{
-
-	color:#f9f9f9;
-	font-size:45px;
-	font-weight: 400;
 	
 }
 

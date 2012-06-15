@@ -14,9 +14,19 @@
 </head>
 <body>
 <div id="wrapper">
-
+	
 	<%= render 'layouts/header' %>
-	<%= yield %>
+
+	<div id="main">
+		
+		<div id="main_inner">
+
+				<%= yield %>
+			
+		</div>
+		
+	</div>
+	
 	<%= render 'layouts/footer' %>
 
 </div>

@@ -1,61 +1,40 @@
 <% provide(:title, "home")%>
 
-		<div id="main">
+<h2 class="home_text">Hi.  I'm James Fisher.</h2>
 			
-			<div id="content_holder">
-				
-					<div class="content">
-					
-					<div class='content_body'>
-						<h2 class="home_text">Hi.  I'm <span class=""> James Fisher</span>.</h2>
-						
-						<h2 class="home_subtitle1">I like to use <span class="home_bold1"> web technology </span> to solve problems.</h2>
-						
-						<h2 class="home_subtitle2">I live and work in Toronto, Canada.</h2>
-						
-						<br>
-						
-						<div class='col1'>
-							
-							<h3>Check out some of my projects:</h3>
-								<div class="hr_title"><hr /></div>
-																
-								<a href="projects.html"><img src="/assets/map_med.png"></a>
-									
-						</div>
-						<div class="col2">
-							<h3>Learn a bit more about me:</h3>
-								<div class="hr_title"><hr /></div>
-								
-								<a href="about.html"><img src="/assets/jaf2_med.jpg"></a>
-
-							
-						</div>
-				
-						<div style="display: block; clear: both;"></div>
-				
-					</div>
-			
-				</div>
-				
-
-				<div id="footer">
-
-					<div class="hr"><hr /></div>
-					
-					<p>&copy; Copyright 2012 James Fisher</p>
-
-				</div>
-				
-			</div>	
-				
-		</div>
+<h2 class="home_subtitle1">I like to use <span class="home_bold1"> web technology </span> to solve problems.</h2>
+	
+<h2 class="home_subtitle2">I live and work in Toronto, Canada.</h2>
+	
+<br>
+	
+<div class='col1 home'>
 		
+	<h3>Check out some of my projects:</h3>
 
-   	<script>
-      $(".home_text").fitText(0.85);
-      $(".home_subtitle1").fitText(2.0);
-      $(".home_subtitle2").fitText(2.0);
-    </script>
+	<div class="hr_title"><hr /></div>
+			
+	<%= link_to image_tag('map_med.png'), projects_path %>
+				
+</div>
+
+<div class="col2 home">
+
+	<h3>Learn a bit more about me:</h3>
+
+	<div class="hr_title"><hr /></div>
+			
+	<%= link_to image_tag('jaf2_med.jpg'), about_path %>
+
+</div>
+
+<div style="display: block; clear: both;"></div>
+	
+
+<script>
+	$(".home_text").fitText(0.89);
+	$(".home_subtitle1").fitText(2.15);
+	$(".home_subtitle2").fitText(2.15);
+</script>
 
 

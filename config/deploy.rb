@@ -1,4 +1,6 @@
 require 'bundler/capistrano'
+load 'deploy/assets'
+
 set :application, "fisherific"
 set :repository,  "https://github.com/fisherific/fisherific.git"
 

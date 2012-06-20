@@ -35,8 +35,43 @@
 
 <script>
 	$(".home_text").fitText(0.89);
-	$(".home_subtitle1").fitText(2.15);
-	$(".home_subtitle2").fitText(2.15);
+	
+	if ($(window).width() < 500 ){
+		
+		
+		$(".home_subtitle1").fitText(1.6);
+		$(".home_subtitle2").fitText(1.6);
+
+		
+	}else{
+		
+		$(".home_subtitle1").fitText(2.45);
+		$(".home_subtitle2").fitText(2.45);
+		
+	}
+	
+	
+	$(window).resize(function(){
+		
+		if ($(window).width() < 500 ){
+			
+			
+			$(".home_subtitle1").fitText(1.5);
+			$(".home_subtitle2").fitText(1.5);
+
+			
+		}else{
+			
+			$(".home_subtitle1").fitText(2.45);
+			$(".home_subtitle2").fitText(2.45);
+			
+		}
+		
+
+		
+	})
+	
+
 </script>
 
 
